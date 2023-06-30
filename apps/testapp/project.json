@@ -16,7 +16,12 @@
         "tsConfig": "apps/testapp/tsconfig.app.json",
         "assets": ["apps/testapp/src/assets"],
         "isolatedConfig": true,
-        "webpackConfig": "apps/testapp/webpack.config.js"
+        "webpackConfig": "apps/testapp/webpack.config.js",
+        "transformers": [
+          {
+            "name": "@nestjs/graphql/plugin"
+          }
+        ]
       },
       "configurations": {
         "development": {},
